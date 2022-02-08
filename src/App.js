@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import {CssBaseline} from "@mui/material";
+
+
+//Get initial theme, if the initialTheme value is false then the theme is light 
+let initialTheme = false;
+//If the the value from the local storage equals to dark
+if (localStorage.getItem("theme") === "dark") {
+  //Set initial theme value to true, that means dark theme
+  initialTheme = true;
+}
+
+
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(initialTheme);
+  const darkTheme = createTheme({
+    palette: {
+      mode: isDarkMode ? "dark" : "light",
+    },
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      
+    </ThemeProvider>
   );
 }
 
