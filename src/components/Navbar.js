@@ -16,9 +16,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeSwitch from "./DarkModeSwitch";
 
 const navLinks = [
-  { name: "About", href: "#about" },
+  { name: "Home", href: "#home" },
   { name: "Projects", href: "#projects" },
-  { name: "Resume", href: "/resume.pdf" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const useStyles = makeStyles((theme) => ({
