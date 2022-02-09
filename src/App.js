@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import {CssBaseline} from "@mui/material";
-import AnimationName from "./components/AnimationName";
+import Home from "./components/Home"
 
 
 //Get initial theme, if the initialTheme value is false then the theme is light 
@@ -27,7 +27,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <AnimationName />
+      <Home />
     </ThemeProvider>
   );
 }
