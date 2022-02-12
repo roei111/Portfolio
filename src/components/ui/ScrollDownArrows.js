@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: "5px solid #53c1c0",
       borderRight: "5px solid #53c1c0",
       transform: "rotate(45deg)",
-    //   margin: "-10px",
     },
   },
 }));

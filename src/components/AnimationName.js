@@ -7,10 +7,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     width: "90vw",
+    height: "15vh",
     margin: "0 auto",
   },
   svg: {
     width: "auto",
+    alignSelf: "flex-start",
     "& path": {
       stroke: "currentColor",
       strokeWidth: "5",
