@@ -49,13 +49,15 @@ const ModeSwitch = styled(Switch)(({ theme }) => ({
 }));
 
 const DarkModeSwitch=(props)=> {
-  const { isDarkMode, setIsDarkMode } = props;
+  const { isDarkMode, setIsDarkMode, setIsThemeChanged } = props;
   const changeSwitchHandler = () => {
     let theme = !isDarkMode ? "dark" : "light";
     localStorage.setItem("theme", theme);
     setIsDarkMode((prevValue) => {
       return !prevValue;
     });
+    //Once this state set to true the fill animation inside the AnimationName component will be removed 
+    setIsThemeChanged(true);
   };
   return <ModeSwitch checked={isDarkMode} onChange={changeSwitchHandler} />;
 }

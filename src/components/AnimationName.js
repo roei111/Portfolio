@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     "& path": {
       stroke: "currentColor",
       strokeWidth: "5",
+      fill: (props) =>
+        //If the theme has changed one or more times, the fill will be without animation - to prevent animation repetition
+        props.isThemeChanged ? [theme.palette.text.primary] : null,
     },
   },
 }));
@@ -30,8 +33,12 @@ const pathVariants = {
     pathLength: 1,
     fill: mode === "dark" ? "rgba(255, 255, 255, 1)" : "rgba(0, 0, 0, 1)",
     transition: {
-      default: { duration: 3, ease: "easeInOut" },
-      fill: { duration: 1.5, ease: [1, 0, 0.8, 1], delay: 1 },
+      pathLength: { duration: 3, ease: "easeInOut" },
+      fill: {
+        duration: 1.5,
+        ease: [1, 0, 0.8, 1],
+        delay: 1,
+      },
     },
   }),
 };
@@ -41,8 +48,8 @@ const pathAttributes = {
   animate: "visible",
 };
 
-const AnimationName = () => {
-  const classes = useStyles();
+const AnimationName = (props) => {
+  const classes = useStyles(props);
   const theme = useTheme();
   const mode = theme.palette.mode;
 

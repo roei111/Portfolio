@@ -53,13 +53,13 @@ const textVariants = {
   },
 };
 
-const Home = () => {
+const Home = (props) => {
   const classes = useStyles();
   return (
     <>
       <ThreeJSModel />
       <Container className={classes.container}>
-        <AnimationName />
+        <AnimationName {...props}/>
         <Typography
           component={motion.div}
           variants={textVariants}

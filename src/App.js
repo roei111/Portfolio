@@ -17,6 +17,7 @@ if (localStorage.getItem("theme") === "dark") {
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(initialTheme);
+  const [isThemeChanged, setIsThemeChanged]= useState(false); //State to control the fill animation inside the AnimationName Component.
   const darkTheme = createTheme({
     palette: {
       mode: isDarkMode ? "dark" : "light",
@@ -26,8 +27,8 @@ function App() {
 
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Home />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} setIsThemeChanged={setIsThemeChanged}/>
+      <Home isThemeChanged={isThemeChanged}/>
     </ThemeProvider>
   );
 }
