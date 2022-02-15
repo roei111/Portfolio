@@ -35,7 +35,7 @@ const pathVariants = {
     transition: {
       pathLength: { duration: 3, ease: "easeInOut" },
       fill: {
-        duration: 1.5,
+        duration: 2,
         ease: [1, 0, 0.8, 1],
         delay: 1,
       },
