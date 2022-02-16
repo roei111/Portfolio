@@ -1,6 +1,6 @@
 import ThreeJSModel from "./ThreeJS/ThreeJSModel";
 import AnimationName from "./AnimationName";
-import { Container, Typography, Button, IconButton } from "@mui/material";
+import { Container, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { motion } from "framer-motion";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -9,11 +9,13 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import DownloadIcon from "@mui/icons-material/Download";
 
 const useStyles = makeStyles((theme) => ({
+  home: {
+    height: "calc(100vh - 70px)",
+  },
   container: {
     display: "flex !important",
     flexDirection: "column",
-    width: "100%",
-    height: "40vh",
+    height: "55%",
   },
   text: {
     padding: "1rem",
@@ -71,11 +73,44 @@ const textVariants = {
     },
   },
 };
+const buttonVariants1 = {
+  hidden: {
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    transition: { type: "spring", stiffness: 100, delay: 2, duration: 3 }
+  },
+};
+const buttonVariants2 = {
+  hidden: {
+    scale: 0,
+  },
+  visible: {
+    scale: 1,
+    transition: { type: "spring", stiffness: 100, delay: 2.5  }
+  },
+};
+const iconsVariants = {
+  hidden: {
+    opacity: 0,
+    y: "25px",
+  },
+  visible: {
+    opacity: 1,
+    y: "0",
+    transition: {
+      duration: 1.5,
+      ease: [0.42, 0, 0.58, 1],
+      delay: 2,
+    },
+  },
+};
 
 const Home = (props) => {
   const classes = useStyles();
   return (
-    <>
+    <section className={classes.home}>
       <ThreeJSModel />
       <Container className={classes.container}>
         <AnimationName {...props} />
@@ -84,25 +119,40 @@ const Home = (props) => {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          // variant="h5"
           color="#53c1c0"
           className={classes.text}
         >
           Full-Stack Web Developer
         </Typography>
-        <div className={classes.homeButtonsWrapper}>
-          <Button variant="contained" className={classes.homeButton}>
+        <motion.div className={classes.homeButtonsWrapper}>
+          <Button
+            variant="contained"
+            className={classes.homeButton}
+            component={motion.button}
+            variants={buttonVariants1}
+            initial="hidden"
+            animate="visible"
+          >
             My Projects
           </Button>
           <Button
             variant="contained"
             endIcon={<DownloadIcon />}
             className={classes.homeButton}
+            component={motion.button}
+            variants={buttonVariants2}
+            initial="hidden"
+            animate="visible"
           >
             Resume
           </Button>
-        </div>
-        <div className={classes.icons}>
+        </motion.div>
+        <motion.div
+          className={classes.icons}
+          variants={iconsVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <a
             href="https://github.com/roei111"
             target="_blank"
@@ -124,9 +174,9 @@ const Home = (props) => {
           >
             <YouTubeIcon fontSize="large" />
           </a>
-        </div>
+        </motion.div>
       </Container>
-    </>
+    </section>
   );
 };
 

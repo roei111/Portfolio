@@ -14,6 +14,7 @@ import { makeStyles } from "@mui/styles";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeSwitch from "./DarkModeSwitch";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -22,6 +23,9 @@ const navLinks = [
 ];
 
 const useStyles = makeStyles((theme) => ({
+  navbar: {
+    height: "70px"
+  },
   navlink: {
     padding: "20px",
   },
@@ -40,12 +44,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const navVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
+
 const Navbar = (props) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   return (
-    <AppBar position="sticky" color="default">
-      <Toolbar disableGutters>
+    <AppBar position="sticky" color="default" className={classes.navbar}>
+      <Toolbar disableGutters component={motion.nav} variants={navVariants}
+          initial="hidden"
+          animate="visible">
         <Typography className={classes.logo} variant="h5" color="text.primary">
           Roei Yaacobi
         </Typography>
