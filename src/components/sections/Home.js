@@ -1,5 +1,5 @@
-import ThreeJSModel from "./ThreeJS/ThreeJSModel";
-import AnimationName from "./AnimationName";
+import ThreeJSModel from "../ThreeJS/ThreeJSModel";
+import AnimationName from "../AnimationName";
 import { Container, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { motion } from "framer-motion";
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
       "&:hover": {
         cursor: "pointer",
         color: [theme.palette.primary.main],
-        transition: "all 0.2s ease-in-out",
+        transition: "all 0.3s linear",
       },
     },
   },
@@ -119,7 +119,7 @@ const Home = (props) => {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          color="#53c1c0"
+          color="primary"
           className={classes.text}
         >
           Full-Stack Web Developer

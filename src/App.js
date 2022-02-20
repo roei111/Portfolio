@@ -2,7 +2,8 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import Home from "./components/Home";
+import Home from "./components/sections/Home";
+import About from "./components/sections/About";
 
 //Get initial theme, if the initialTheme value is false then the theme is light
 let initialTheme = false;
@@ -33,6 +34,7 @@ function App() {
         setIsThemeChanged={setIsThemeChanged}
       />
       <Home isThemeChanged={isThemeChanged} />
+      <About />
     </ThemeProvider>
   );
 }

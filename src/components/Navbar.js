@@ -24,10 +24,11 @@ const navLinks = [
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
-    height: "70px"
+    height: "70px",
   },
   navlink: {
     padding: "20px",
+    fontWeight: "600 !important",
   },
   hideLinks: {
     display: "none",
@@ -56,20 +57,39 @@ const navVariants = {
     },
   },
 };
+const linkVariants = {
+  hidden: (index) => ({
+    y: -30,
+    opacity: 0,
+  }),
+  visible: (index) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: index * 0.2,
+      duration: 2,
+      ease: "easeInOut",
+    },
+  }),
+};
 
 const Navbar = (props) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   return (
     <AppBar position="sticky" color="default" className={classes.navbar}>
-      <Toolbar disableGutters component={motion.nav} variants={navVariants}
-          initial="hidden"
-          animate="visible">
+      <Toolbar
+        disableGutters
+        component={motion.nav}
+        variants={navVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <Typography className={classes.logo} variant="h5" color="text.primary">
           Roei Yaacobi
         </Typography>
         <DarkModeSwitch {...props} />
-        {navLinks.map((item) => (
+        {navLinks.map((item, index) => (
           <Link
             className={`${classes.navlink} ${classes.hideLinks}`}
             color="text.primary"
@@ -77,6 +97,16 @@ const Navbar = (props) => {
             underline="none"
             href={item.href}
             key={item.name}
+            component={motion.a}
+            // animate={{
+            //   opacity: [0, 1],
+            //   y: [-30, 0],
+            // }}
+            // transition={{ delay: index * 0.1 }}
+            custom={index}
+            variants={linkVariants}
+            initial="hidden"
+            animate="visible"
           >
             {item.name}
           </Link>
