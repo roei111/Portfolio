@@ -27,8 +27,14 @@ const useStyles = makeStyles((theme) => ({
     height: "70px",
   },
   navlink: {
-    padding: "20px",
+    padding: "10px 20px",
     fontWeight: "600 !important",
+    "&:hover": {
+      color: [theme.palette.primary.main],
+      transition: "color 0.3s linear",
+      borderBottom: "3px solid",
+      transition: "border-bottom 0.2s ease-in-out",
+    },
   },
   hideLinks: {
     display: "none",
