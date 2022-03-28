@@ -35,7 +35,13 @@ const About = () => {
   return (
     <Container>
       <Divider variant="middle" style={{ margin: "1rem" }} />
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <div>
           <Typography className={classes.title} component="h2">
             About me
@@ -43,12 +49,14 @@ const About = () => {
 
           <Typography className={classes.aboutText}>
             Hello! I am <span style={{ color: "#39bcbc" }}>Roei Yaacobi</span>,
-            a self-taught web developer who loves combining the worlds of logic
-            and creative design to make eye-catching, accessible and user
-            friendly websites.
+            a self-taught web developer who loves combining the worlds of
+            <span style={{ color: "#39bcbc" }}> logic </span>
+            and creative <span style={{ color: "#39bcbc" }}>design </span> to
+            make eye-catching, accessible and user friendly websites. Looking
+            for my foothold in the world of programming.
           </Typography>
         </div>
-        <img src={aboutImage} style={{ width: "40%" }} />
+        <img src={aboutImage} style={{ width: "100%" }} />
       </div>
     </Container>
   );

@@ -98,11 +98,6 @@ const Navbar = (props) => {
             href={item.href}
             key={item.name}
             component={motion.a}
-            // animate={{
-            //   opacity: [0, 1],
-            //   y: [-30, 0],
-            // }}
-            // transition={{ delay: index * 0.1 }}
             custom={index}
             variants={linkVariants}
             initial="hidden"
