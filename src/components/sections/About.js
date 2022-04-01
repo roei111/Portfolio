@@ -1,12 +1,12 @@
 import { Container, Typography, Divider } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-// import aboutImage from "../../images/about.png";
-import aboutImage from "../../images/about2.png";
 
 const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "2rem !important",
     fontWeight: "700 !important",
+    textAlign: "center",
+    marginBottom: "1rem !important"
   },
   aboutText: {
     fontSize: "1.2rem !important",
@@ -56,7 +56,7 @@ const About = () => {
             for my foothold in the world of programming.
           </Typography>
         </div>
-        <img src={aboutImage} style={{ width: "100%" }} />
+        <img src={"./images/about.png"} style={{ width: "100%" }} />
       </div>
     </Container>
   );
