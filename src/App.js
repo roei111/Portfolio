@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/layout/Navbar";
+import ScrollTop from "./components/layout/ScrollTop"
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import Home from "./components/sections/Home";
+import Home from "./components/sections/home/Home";
 import About from "./components/sections/About";
 import Projects from "./components/sections/projects/Projects";
 
@@ -17,17 +18,22 @@ if (localStorage.getItem("theme") === "dark") {
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(initialTheme);
   const [isThemeChanged, setIsThemeChanged] = useState(false); //State to control the fill animation inside the AnimationName Component.
-  const darkTheme = createTheme({
+  const theme = createTheme({
     palette: {
       mode: isDarkMode ? "dark" : "light",
       primary: {
         main: "#39bcbc",
         contrastText: isDarkMode? "white": "black",
       },
+      secondary: {
+        main: "#6e5494",
+      }
     },
   });
   return (
-    <ThemeProvider theme={darkTheme}>
+    <>
+    
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navbar
         isDarkMode={isDarkMode}
@@ -38,6 +44,8 @@ function App() {
       <About />
       <Projects />
     </ThemeProvider>
+    <ScrollTop showBelow={250} />
+    </>
   );
 }
 

@@ -21,7 +21,8 @@ const CardButtons = (props) => {
       <Button
         size="small"
         variant="contained"
-        sx={{ backgroundColor: "#6e5494", color: "white" }}
+        // sx={{ backgroundColor: "#6e5494", color: "white" }}
+        color="secondary"
         target="_blank"
         href={links.github}
         startIcon={<GitHubIcon />}

@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Birthday Organizer",
     description:
-      "Platform built with MERN stack for organizing birthdays by groups, and counting down to the dates. It has cool features like authentication, authorization, single-page application, responsive design, full CRUD operations & upload photos. ",
+      "Platform built with MERN stack for organizing birthdays by groups, and counting down to the dates. It has cool features like authentication, authorization, single-page application, responsive design, full CRUD operations & upload photos",
     tech: [
       "ReactJS",
       "Material-UI",
@@ -29,7 +29,7 @@ const projects = [
     id: 2,
     title: "Infinite Scroll Stock Photos",
     description:
-      "An image gallery that fetches data from Unsplash API. It has some awesome features like searching for images, apply filters (sort by, orientation and color) and infinite scrolling in which images keeps on loading as the user scrolls.",
+      "An image gallery that fetches data from Unsplash API. It has some awesome features like searching for images, apply filters (sort by, orientation and color) and infinite scrolling in which images keeps on loading as the user scrolls",
     tech: ["ReactJS", "Material-UI"],
     img: "../images/infinite-scroll.png",
     links: {
@@ -42,7 +42,7 @@ const projects = [
     id: 3,
     title: "URL Shortener",
     description:
-      "Vanilla Javascript app that shorten a long URL, tracks the number of click and has full responsive design",
+      "Vanilla Javascript app that shortens a long URL, tracks the number of clicks and has full responsive design",
     tech: ["EJS", "Bootstrap", "Node.js", "Express", "MongoDB", "Mongoose"],
     img: "../images/url-shortener.png",
     links: {

@@ -1,5 +1,5 @@
-import ThreeJSModel from "../ThreeJS/ThreeJSModel";
-import AnimationName from "../AnimationName";
+import ThreeJSModel from "../../ThreeJS/ThreeJSModel";
+import AnimationName from "./AnimationName";
 import { Container, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { motion } from "framer-motion";

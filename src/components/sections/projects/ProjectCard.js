@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
   const classes = useStyles();
   const { project } = props;
   return (
-    <Card sx={{ maxWidth: 345, margin: "1rem auto" }}>
+    <Card sx={{ maxWidth: 345, margin: "1rem auto" }} elevation={15}>
       <CardMedia
         component="img"
         alt={project.title}

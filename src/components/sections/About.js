@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2rem !important",
     fontWeight: "700 !important",
     textAlign: "center",
-    marginBottom: "1rem !important"
+    marginBottom: "1rem !important",
   },
   aboutText: {
     fontSize: "1.2rem !important",
@@ -28,6 +28,12 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  aboutImage: {
+    width: "100%",
+  },
+  colorText: {
+    color: [theme.palette.primary.main],
+  },
 }));
 
 const About = () => {
@@ -48,15 +54,15 @@ const About = () => {
           </Typography>
 
           <Typography className={classes.aboutText}>
-            Hello! I am <span style={{ color: "#39bcbc" }}>Roei Yaacobi</span>,
+            Hello! I am <span className={classes.colorText}>Roei Yaacobi</span>,
             a self-taught web developer who loves combining the worlds of
-            <span style={{ color: "#39bcbc" }}> logic </span>
-            and creative <span style={{ color: "#39bcbc" }}>design </span> to
+            <span className={classes.colorText}> logic </span>
+            and creative <span className={classes.colorText}>design </span> to
             make eye-catching, accessible and user friendly websites. Looking
             for my foothold in the world of programming.
           </Typography>
         </div>
-        <img src={"./images/about.png"} style={{ width: "100%" }} />
+        <img src={"./images/about.png"} alt="about me" className={classes.aboutImage} />
       </div>
     </Container>
   );
