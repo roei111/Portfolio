@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/layout/Navbar";
 import ScrollTop from "./components/layout/ScrollTop"
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -32,7 +32,6 @@ function App() {
   });
   return (
     <>
-    
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navbar
@@ -43,8 +42,8 @@ function App() {
       <Home isThemeChanged={isThemeChanged} />
       <About />
       <Projects />
+      <ScrollTop showBelow={250} />
     </ThemeProvider>
-    <ScrollTop showBelow={250} />
     </>
   );
 }
