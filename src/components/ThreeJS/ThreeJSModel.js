@@ -11,7 +11,7 @@ const ThreeJSModel = () => {
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 4, ease: "easeInOut" }}
     >
-      <Canvas style={{ width: "100vw", height: "50vh", cursor: "grab" }}>
+      <Canvas style={{ width: "100vw", height: "50vh", cursor: "grab", marginTop: "70px" }}>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={1.5} />
         <directionalLight position={[2, 5, 2]} intensity={1} />

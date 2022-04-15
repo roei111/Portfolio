@@ -18,13 +18,14 @@ import { motion } from "framer-motion";
 
 const navLinks = [
   { name: "Home", href: "#home" },
+  { name: "About me", href: "#about" },
   { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
 ];
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
     height: "70px",
+    position: "fixed !important"
   },
   navlink: {
     padding: "10px 20px",
@@ -80,6 +81,10 @@ const linkVariants = {
   }),
 };
 
+const backToTop =()=>{
+  window.scrollTo({ top: 0, behavior: `smooth` });
+}
+
 const Navbar = (props) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
@@ -92,7 +97,7 @@ const Navbar = (props) => {
         initial="hidden"
         animate="visible"
       >
-        <Typography className={classes.logo} variant="h5" color="text.primary">
+        <Typography className={classes.logo} variant="h5" color="text.primary" onClick={backToTop}>
           Roei Yaacobi
         </Typography>
         <DarkModeSwitch {...props} />

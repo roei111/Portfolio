@@ -6,6 +6,7 @@ import { CssBaseline } from "@mui/material";
 import Home from "./components/sections/home/Home";
 import About from "./components/sections/About";
 import Projects from "./components/sections/projects/Projects";
+import Footer from "./components/sections/Footer";
 
 //Get initial theme, if the initialTheme value is false then the theme is light
 let initialTheme = false;
@@ -42,6 +43,7 @@ function App() {
       <Home isThemeChanged={isThemeChanged} />
       <About />
       <Projects />
+      <Footer />
       <ScrollTop showBelow={250} />
     </ThemeProvider>
     </>
