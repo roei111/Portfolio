@@ -3,10 +3,8 @@ import AnimationName from "./AnimationName";
 import { Container, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { motion } from "framer-motion";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import DownloadIcon from "@mui/icons-material/Download";
+import Icons from "../../Icons";
 
 const useStyles = makeStyles((theme) => ({
   home: {
@@ -153,27 +151,7 @@ const Home = (props) => {
           initial="hidden"
           animate="visible"
         >
-          <a
-            href="https://github.com/roei111"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GitHubIcon fontSize="large" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/roei-yaacobi/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedInIcon fontSize="large" />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCvhwvtUtrh7WOL_VNyp2E4Q"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <YouTubeIcon fontSize="large" />
-          </a>
+         <Icons />
         </motion.div>
       </Container>
     </section>
