@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 const Projects = () => {
   const classes = useStyles();
   return (
-    <Container>
+    <Container id="projects">
       <Divider variant="middle" style={{ margin: "1rem" }} />
       <Typography className={classes.title} component="h2">
         Projects

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "./components/layout/Navbar";
 import ScrollTop from "./components/layout/ScrollTop"
 import { ThemeProvider, createTheme } from "@mui/material/styles";

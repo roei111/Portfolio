@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Fab, Slide } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import { animateScroll as scroll } from "react-scroll";
 
 const useStyles = makeStyles({
   wrapperDiv: {
@@ -20,7 +21,7 @@ const ScrollTop = ({ showBelow }) => {
   const [show, setShow] = useState(false);
 
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: `smooth` });
+    scroll.scrollToTop();
   };
 
   useEffect(() => {

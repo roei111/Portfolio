@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Link,
   AppBar,
   Toolbar,
   IconButton,
@@ -15,17 +14,18 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeSwitch from "./DarkModeSwitch";
 import { motion } from "framer-motion";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About me", href: "#about" },
-  { name: "Projects", href: "#projects" },
+  { name: "Home", href: "home" },
+  { name: "About me", href: "about" },
+  { name: "Projects", href: "projects" },
 ];
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
     height: "70px",
-    position: "fixed !important"
+    position: "fixed !important",
   },
   navlink: {
     padding: "10px 20px",
@@ -81,9 +81,9 @@ const linkVariants = {
   }),
 };
 
-const backToTop =()=>{
-  window.scrollTo({ top: 0, behavior: `smooth` });
-}
+const backToTop = () => {
+  scroll.scrollToTop();
+};
 
 const Navbar = (props) => {
   const classes = useStyles();
@@ -97,17 +97,23 @@ const Navbar = (props) => {
         initial="hidden"
         animate="visible"
       >
-        <Typography className={classes.logo} variant="h5" color="text.primary" onClick={backToTop}>
+        <Typography
+          className={classes.logo}
+          variant="h5"
+          color="text.primary"
+          onClick={backToTop}
+        >
           Roei Yaacobi
         </Typography>
         <DarkModeSwitch {...props} />
         {navLinks.map((item, index) => (
           <Link
             className={`${classes.navlink} ${classes.hideLinks}`}
-            color="text.primary"
-            variant="button"
-            underline="none"
-            href={item.href}
+            to={item.href}
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
             key={item.name}
             component={motion.a}
             custom={index}
@@ -141,17 +147,22 @@ const Navbar = (props) => {
         <Divider />
         <List>
           {navLinks.map((item) => (
-            <ListItem key={item.name}>
-              <Link
-                className={classes.navlink}
-                color="textPrimary"
-                variant="button"
-                underline="none"
-                href={item.href}
-              >
-                {item.name}
-              </Link>
-            </ListItem>
+            <React.Fragment key={item.name}>
+              <ListItem>
+                <Link
+                  className={classes.navlink}
+                  to={item.href}
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  onClick={() => setOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              </ListItem>
+              <Divider variant="middle" />
+            </React.Fragment>
           ))}
         </List>
       </SwipeableDrawer>

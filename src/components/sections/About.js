@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   aboutImage: {
     width: "100%",
+    marginTop: "1rem",
   },
   colorText: {
     color: [theme.palette.primary.main],
@@ -39,8 +40,11 @@ const useStyles = makeStyles((theme) => ({
 const About = () => {
   const classes = useStyles();
   return (
-    <Container>
+    <Container id="about">
       <Divider variant="middle" style={{ margin: "1rem" }} />
+      <Typography className={classes.title} component="h2">
+        About me
+      </Typography>
       <div
         style={{
           display: "flex",
@@ -49,10 +53,6 @@ const About = () => {
         }}
       >
         <div>
-          <Typography className={classes.title} component="h2">
-            About me
-          </Typography>
-
           <Typography className={classes.aboutText}>
             Hello! I am <span className={classes.colorText}>Roei Yaacobi</span>,
             a self-taught web developer who loves combining the worlds of
@@ -62,7 +62,11 @@ const About = () => {
             for my foothold in the world of programming.
           </Typography>
         </div>
-        <img src={"./images/about.png"} alt="about me" className={classes.aboutImage} />
+        <img
+          src={"./images/about.png"}
+          alt="about me"
+          className={classes.aboutImage}
+        />
       </div>
     </Container>
   );

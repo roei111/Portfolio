@@ -23,23 +23,23 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "700 !important",
   },
 
-  icons: {
-    display: "flex",
-    width: "55%",
-    justifyContent: "space-between",
-    alignSelf: "flex-start",
-    paddingInline: "1rem",
-    marginTop: "1rem",
-    "& svg": {
-      color: [theme.palette.text.primary],
-      paddingLeft: "0",
-      "&:hover": {
-        cursor: "pointer",
-        color: [theme.palette.primary.main],
-        transition: "all 0.3s linear",
-      },
-    },
-  },
+  // icons: {
+  //   display: "flex",
+  //   width: "55%",
+  //   justifyContent: "space-between",
+  //   alignSelf: "flex-start",
+  //   paddingInline: "1rem",
+  //   marginTop: "1rem",
+  //   "& svg": {
+  //     color: [theme.palette.text.primary],
+  //     paddingLeft: "0",
+  //     "&:hover": {
+  //       cursor: "pointer",
+  //       color: [theme.palette.primary.main],
+  //       transition: "all 0.3s linear",
+  //     },
+  //   },
+  // },
   homeButtonsWrapper: {
     display: "flex",
     justifyContent: "space-between",
@@ -108,7 +108,7 @@ const iconsVariants = {
 const Home = (props) => {
   const classes = useStyles();
   return (
-    <section className={classes.home}>
+    <section className={classes.home} id="home">
       <ThreeJSModel />
       <Container className={classes.container}>
         <AnimationName {...props} />
