@@ -18,7 +18,11 @@ const projects = [
       "Cloudinary",
       "JWT",
     ],
-    img: "../images/birthday-organizer.png",
+    img: [
+      "../images/birthday-organizer/img1.png",
+      "../images/birthday-organizer/img2.png",
+      "../images/birthday-organizer/img3.png",
+    ],
     links: {
       url: "https://birthday-organizer.herokuapp.com/",
       github: "https://github.com/roei111/Birthday-Countdown",
@@ -31,7 +35,11 @@ const projects = [
     description:
       "An image gallery that fetches data from Unsplash API. It has some awesome features like searching for images, apply filters (sort by, orientation and color) and infinite scrolling in which images keeps on loading as the user scrolls",
     tech: ["ReactJS", "Material-UI"],
-    img: "../images/infinite-scroll.png",
+    img: [
+      "../images/infinite-scroll/img1.png",
+      "../images/infinite-scroll/img2.png",
+      "../images/infinite-scroll/img3.png",
+    ],
     links: {
       url: "https://infinite-scroll-photos.herokuapp.com/",
       github: "https://github.com/roei111/Infinite-Scroll",
@@ -44,7 +52,7 @@ const projects = [
     description:
       "Vanilla Javascript app that shortens a long URL, tracks the number of clicks and has full responsive design",
     tech: ["EJS", "Bootstrap", "Node.js", "Express", "MongoDB", "Mongoose"],
-    img: "../images/url-shortener.png",
+    img: ["../images/url-shortener/img1.png"],
     links: {
       github: "https://github.com/roei111/Url-Shortener",
       youtube: "https://www.youtube.com/watch?v=iIN-IuodrzM",
