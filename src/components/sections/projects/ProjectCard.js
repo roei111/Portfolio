@@ -1,7 +1,7 @@
-import { Typography, Card, CardMedia, CardContent, Chip } from "@mui/material";
+import { Typography, Card, CardContent, Chip } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import CardButtons from "./CardButtons";
-import ImageCarousel from "../../ImageCarousel"
+import ImageCarousel from "../../ImageCarousel";
 
 const useStyles = makeStyles((theme) => ({
   chip: {
@@ -18,14 +18,7 @@ const ProjectCard = (props) => {
   const { project } = props;
   return (
     <Card sx={{ maxWidth: 345, margin: "1rem auto" }} elevation={15}>
-      {/* <CardMedia
-        // component="img"
-        // alt={project.title}
-        height="200"
-        // image={project.img}
-      > */}
-        <ImageCarousel images={project.img}/>
-      {/* </CardMedia> */}
+      <ImageCarousel images={project.img} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {project.title}
