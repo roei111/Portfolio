@@ -13,6 +13,7 @@ const useStyles = makeStyles({
     position: "fixed !important",
     bottom: "2vh",
     right: "2vh",
+    zIndex: "100",
   },
 });
 

@@ -1,7 +1,7 @@
 import { Typography, Card, CardContent, Chip } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import CardButtons from "./CardButtons";
-import ImageCarousel from "../../ImageCarousel";
+import ImageCarousel from "../../layout/ImageCarousel";
 
 const useStyles = makeStyles((theme) => ({
   chip: {

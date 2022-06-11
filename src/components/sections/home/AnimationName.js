@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     width: "90vw",
     height: "15vh",
     margin: "0 auto",
+    [theme.breakpoints.up("lg")]: {
+      height: "20vh",
+      width: "40vw",
+      margin: 0,
+    },
   },
   svg: {
     width: "auto",

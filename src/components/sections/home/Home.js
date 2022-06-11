@@ -5,10 +5,18 @@ import { makeStyles } from "@mui/styles";
 import { motion } from "framer-motion";
 import DownloadIcon from "@mui/icons-material/Download";
 import Icons from "../../Icons";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
   home: {
     height: "calc(100vh - 70px)",
+    [theme.breakpoints.up("lg")]: {
+      height: "100vh",
+      display: "flex",
+      flexDirection: "row-reverse",
+      alignItems: "end",
+      margin: "0 50px",
+    },
   },
   container: {
     display: "flex !important",
@@ -22,24 +30,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.5rem !important",
     fontWeight: "700 !important",
   },
-
-  // icons: {
-  //   display: "flex",
-  //   width: "55%",
-  //   justifyContent: "space-between",
-  //   alignSelf: "flex-start",
-  //   paddingInline: "1rem",
-  //   marginTop: "1rem",
-  //   "& svg": {
-  //     color: [theme.palette.text.primary],
-  //     paddingLeft: "0",
-  //     "&:hover": {
-  //       cursor: "pointer",
-  //       color: [theme.palette.primary.main],
-  //       transition: "all 0.3s linear",
-  //     },
-  //   },
-  // },
   homeButtonsWrapper: {
     display: "flex",
     justifyContent: "space-between",
@@ -77,7 +67,7 @@ const buttonVariants1 = {
   },
   visible: {
     scale: 1,
-    transition: { type: "spring", stiffness: 100, delay: 2, duration: 3 }
+    transition: { type: "spring", stiffness: 100, delay: 2, duration: 3 },
   },
 };
 const buttonVariants2 = {
@@ -86,7 +76,7 @@ const buttonVariants2 = {
   },
   visible: {
     scale: 1,
-    transition: { type: "spring", stiffness: 100, delay: 2.5  }
+    transition: { type: "spring", stiffness: 100, delay: 2.5 },
   },
 };
 const iconsVariants = {
@@ -126,12 +116,20 @@ const Home = (props) => {
           <Button
             variant="contained"
             className={classes.homeButton}
-            component={motion.button}
+            component={motion.div}
             variants={buttonVariants1}
             initial="hidden"
             animate="visible"
           >
-            My Projects
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+            >
+              My Projects
+            </Link>
           </Button>
           <Button
             variant="contained"
@@ -151,7 +149,7 @@ const Home = (props) => {
           initial="hidden"
           animate="visible"
         >
-         <Icons />
+          <Icons />
         </motion.div>
       </Container>
     </section>

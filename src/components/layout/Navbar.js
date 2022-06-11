@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
   navlink: {
     padding: "10px 20px",
     fontWeight: "600 !important",
+    cursor: "pointer",
     [theme.breakpoints.up("md")]: {
       "&:hover": {
         color: [theme.palette.primary.main],
