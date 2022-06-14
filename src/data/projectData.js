@@ -19,10 +19,10 @@ const projects = [
       "JWT",
     ],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201895/portfolio-avif/img1_iikmfj_u14et3.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201897/portfolio-avif/groups-desktop_lx1luo_jebby8.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201893/portfolio-avif/image_1_xzefap_ri1ga9.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201894/portfolio-avif/login-page-desktop_by1ayt_pxm6pk.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201895/portfolio-avif/img1_iikmfj_u14et3.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201897/portfolio-avif/groups-desktop_lx1luo_jebby8.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201893/portfolio-avif/image_1_xzefap_ri1ga9.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201894/portfolio-avif/login-page-desktop_by1ayt_pxm6pk.webp",
     ],
     links: {
       url: "https://birthday-organizer.herokuapp.com/",
@@ -37,10 +37,10 @@ const projects = [
       "An image gallery that fetches data from Unsplash API. It has some awesome features like searching for images, apply filters (sort by, orientation and color) and infinite scrolling in which images keeps on loading as the user scrolls",
     tech: ["ReactJS", "Material-UI"],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201894/portfolio-avif/img1_yebpmo_ceflkr.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655203856/portfolio-avif/infinite-image-view_wuj3nk.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201894/portfolio-avif/infinite-desktop_x93qsl_nqbdqz.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201895/portfolio-avif/infinite-desktop2_feirqf_rxq0uh.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201894/portfolio-avif/img1_yebpmo_ceflkr.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655203856/portfolio-avif/infinite-image-view_wuj3nk.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201894/portfolio-avif/infinite-desktop_x93qsl_nqbdqz.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201895/portfolio-avif/infinite-desktop2_feirqf_rxq0uh.webp",
     ],
     links: {
       url: "https://infinite-scroll-photos.herokuapp.com/",
@@ -55,8 +55,8 @@ const projects = [
       "Vanilla Javascript app that shortens a long URL, tracks the number of clicks and has full responsive design",
     tech: ["EJS", "Bootstrap", "Node.js", "Express", "MongoDB", "Mongoose"],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201894/portfolio-avif/img1_xaczrg_jumnfy.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655201893/portfolio-avif/image_2_w9wrve_z9enik.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201894/portfolio-avif/img1_xaczrg_jumnfy.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_350,w_720/v1655201893/portfolio-avif/image_2_w9wrve_z9enik.webp",
     ],
     links: {
       github: "https://github.com/roei111/Url-Shortener",
