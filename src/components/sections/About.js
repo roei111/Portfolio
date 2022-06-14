@@ -63,7 +63,7 @@ const About = () => {
           </Typography>
         </div>
         <img
-          src={"./images/about.png"}
+          src={"https://res.cloudinary.com/dq6iduc79/image/upload/v1655203386/portfolio-avif/about5_j1mdia.webp"}
           alt="about me"
           className={classes.aboutImage}
         />

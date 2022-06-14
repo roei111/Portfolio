@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles((theme) => ({
   carouselImage: {
     height: "200px",
-    objectFit: "cover",
+    objectFit: "fill",
     width: "100%",
   },
 }));
