@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09))",
   },
   icons: {
+    width: "20%",
+    [theme.breakpoints.down("md")]: {
+      width: "50%",
+    },
     margin: "1rem auto !important",
     "& svg": {
       color: "#FFF",

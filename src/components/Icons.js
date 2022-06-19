@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
         transition: "all 0.3s linear",
       },
     },
+    [theme.breakpoints.only("md")]: {
+      width: "30%",
+    },
   },
 }));
 

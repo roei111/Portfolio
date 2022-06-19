@@ -3,7 +3,6 @@ import AnimationName from "./AnimationName";
 import { Container, Typography, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { motion } from "framer-motion";
-import DownloadIcon from "@mui/icons-material/Download";
 import Icons from "../../Icons";
 import { Link } from "react-scroll";
 
@@ -14,14 +13,16 @@ const useStyles = makeStyles((theme) => ({
       height: "100vh",
       display: "flex",
       flexDirection: "row-reverse",
+      justifyContent: "center",
       alignItems: "end",
-      margin: "0 50px",
+      margin: "0 20rem",
     },
   },
   container: {
     display: "flex !important",
     flexDirection: "column",
     height: "55%",
+    zIndex: 1,
   },
   text: {
     padding: "1rem",
@@ -68,15 +69,6 @@ const buttonVariants1 = {
   visible: {
     scale: 1,
     transition: { type: "spring", stiffness: 100, delay: 2, duration: 3 },
-  },
-};
-const buttonVariants2 = {
-  hidden: {
-    scale: 0,
-  },
-  visible: {
-    scale: 1,
-    transition: { type: "spring", stiffness: 100, delay: 2.5 },
   },
 };
 const iconsVariants = {
@@ -130,17 +122,6 @@ const Home = (props) => {
             >
               My Projects
             </Link>
-          </Button>
-          <Button
-            variant="contained"
-            endIcon={<DownloadIcon />}
-            className={classes.homeButton}
-            component={motion.button}
-            variants={buttonVariants2}
-            initial="hidden"
-            animate="visible"
-          >
-            Resume
           </Button>
         </motion.div>
         <motion.div
