@@ -1,25 +1,10 @@
-import Carousel from "react-material-ui-carousel";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   carouselImage: {
-    objectFit: "cover",
-    width: "100%",
-    [theme.breakpoints.up("xs")]: {
-      height: "350px",
-    },
-    [theme.breakpoints.up("md")]: {
-      height: "100%",
-    },
-    [theme.breakpoints.up("lg")]: {
-      objectFit: "fill",
-    },
-  },
-  carousel: {
-    height: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "100%",
-    },
+    objectFit: "fill",
   },
 }));
 
@@ -27,19 +12,7 @@ const ImageCarousel = (props) => {
   const classes = useStyles();
   const images = props.images;
   return (
-    <Carousel
-      navButtonsAlwaysVisible={true}
-      animation="slide"
-      className={classes.carousel}
-      navButtonsProps={{ style: { backgroundColor: "#000000b3" } }}
-      indicatorContainerProps={{
-        style: {
-          zIndex: "1",
-          marginTop: "-40px",
-          position: "absolute"
-        },
-      }}
-    >
+    <Carousel showThumbs={false} infiniteLoop={true}>
       {images.map((image) => (
         <img
           className={classes.carouselImage}

@@ -13,24 +13,27 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     margin: "2rem auto",
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       display: "flex",
       flexDirection: "row-reverse",
     },
   },
   contentWrapper: {
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.only("md")]:{
+      width: "70%",
+    },
+    [theme.breakpoints.up("lg")]: {
       width: "400px",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
     },
   },
-  bottomItems: {
-    [theme.breakpoints.up("md")]: {
-      marginBottom: "2rem",
-    },
-  },
+  // bottomItems: {
+  //   [theme.breakpoints.up("md")]: {
+  //     marginBottom: "2rem",
+  //   },
+  // },
 }));
 
 const ProjectCard = (props) => {
@@ -48,7 +51,7 @@ const ProjectCard = (props) => {
             {project.description}
           </Typography>
         </CardContent>
-        <div className={classes.bottomItems}>
+        <div>
           <div className={classes.allChips}>
             {project.tech.map((tech, index) => (
               <Chip className={classes.chip} label={tech} key={index} />
