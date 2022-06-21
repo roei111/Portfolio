@@ -1,40 +1,7 @@
 import { Typography, Card, CardContent, Chip } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-import CardButtons from "./CardButtons";
-import ImageCarousel from "../../layout/ImageCarousel";
-
-const useStyles = makeStyles((theme) => ({
-  chip: {
-    margin: "0.1rem",
-    color: "white",
-  },
-  allChips: {
-    margin: "0.5rem 0.3rem",
-  },
-  card: {
-    margin: "2rem auto",
-    [theme.breakpoints.up("lg")]: {
-      display: "flex",
-      flexDirection: "row-reverse",
-    },
-  },
-  contentWrapper: {
-    [theme.breakpoints.only("md")]:{
-      width: "70%",
-    },
-    [theme.breakpoints.up("lg")]: {
-      width: "400px",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-    },
-  },
-  // bottomItems: {
-  //   [theme.breakpoints.up("md")]: {
-  //     marginBottom: "2rem",
-  //   },
-  // },
-}));
+import CardButtons from "../CardButtons";
+import ImageCarousel from "../../../layout/imageCarousel/ImageCarousel";
+import { useStyles } from "./ProjectCard-style";
 
 const ProjectCard = (props) => {
   const classes = useStyles();

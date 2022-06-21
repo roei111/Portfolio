@@ -1,7 +1,6 @@
 import { makeStyles } from "@mui/styles";
-import Icons from "../Icons";
 
-const useStyles = makeStyles((theme) => ({
+export const useStyles = makeStyles((theme) => ({
   footer: {
     height: "100%",
     backgroundColor: "#121212",
@@ -25,19 +24,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "0.8rem",
     width: "70%",
     margin: "0 auto",
+    marginBottom: "1rem",
   },
   colorText: {
     color: [theme.palette.primary.main],
   },
 }));
-
-const Footer = () => {
-  const classes = useStyles();
-  return (
-    <footer className={classes.footer}>
-        <Icons iconsClassName={classes.icons}/>
-        <p className={classes.copyright}>COPYRIGHT © 2022 <span className={classes.colorText}>ROEI YAACOBI</span> ALL RIGHTS RESERVE</p>
-    </footer>);
-};
-
-export default Footer;

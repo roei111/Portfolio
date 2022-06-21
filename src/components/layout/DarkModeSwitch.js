@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import {Switch} from "@mui/material";
+import { Switch } from "@mui/material";
 
 const ModeSwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -48,7 +48,7 @@ const ModeSwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-const DarkModeSwitch=(props)=> {
+const DarkModeSwitch = (props) => {
   const { isDarkMode, setIsDarkMode, setIsThemeChanged } = props;
   const changeSwitchHandler = () => {
     let theme = !isDarkMode ? "dark" : "light";
@@ -56,10 +56,10 @@ const DarkModeSwitch=(props)=> {
     setIsDarkMode((prevValue) => {
       return !prevValue;
     });
-    //Once this state set to true the fill animation inside the AnimationName component will be removed 
+    //Once this state set to true the fill animation inside the AnimationName component will be removed
     setIsThemeChanged(true);
   };
   return <ModeSwitch checked={isDarkMode} onChange={changeSwitchHandler} />;
-}
+};
 
 export default DarkModeSwitch;

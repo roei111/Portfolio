@@ -3,20 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Abstract from "./Abstract";
 import { motion } from "framer-motion";
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles((theme) => ({
-  canvas: {
-    width: "100vw !important", height: "50vh !important", cursor: "grab", marginTop: "70px",
-    [theme.breakpoints.up("lg")]: {
-      height: "85vh !important",
-      width: "60vw !important",
-      marginTop: "0",
-      marginBottom: "50px",
-      marginLeft: "-150px",
-    },
-  },
-}));
+import { useStyles } from "./ThreeJSModel-style";
 
 const ThreeJSModel = () => {
   const classes = useStyles();

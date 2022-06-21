@@ -1,12 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles((theme) => ({
-  carouselImage: {
-    objectFit: "fill",
-  },
-}));
+import { useStyles } from "./ImageCarousel-style";
 
 const ImageCarousel = (props) => {
   const classes = useStyles();

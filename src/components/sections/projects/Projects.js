@@ -1,16 +1,7 @@
 import { Container, Typography, Divider } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import projects from "../../../data/projectData";
-import ProjectCard from "./ProjectCard";
-
-const useStyles = makeStyles((theme) => ({
-  title: {
-    fontSize: "2rem !important",
-    fontWeight: "700 !important",
-    textAlign: "center",
-    marginBottom: "1rem !important"
-  },
-}));
+import ProjectCard from "./projectCard/ProjectCard";
+import { useStyles } from "./Projects-style";
 
 const Projects = () => {
   const classes = useStyles();

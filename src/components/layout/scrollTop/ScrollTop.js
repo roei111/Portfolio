@@ -1,21 +1,8 @@
 import React, { useState, useEffect } from "react";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { Fab, Slide } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import { animateScroll as scroll } from "react-scroll";
-
-const useStyles = makeStyles({
-  wrapperDiv: {
-    display: "flex",
-    justifyContent: "end",
-  },
-  fab: {
-    position: "fixed !important",
-    bottom: "2vh",
-    right: "2vh",
-    zIndex: "100",
-  },
-});
+import { useStyles } from "./ScrollTop-style";
 
 const ScrollTop = ({ showBelow }) => {
   const classes = useStyles();
