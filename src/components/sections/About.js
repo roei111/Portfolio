@@ -11,29 +11,24 @@ const useStyles = makeStyles((theme) => ({
   aboutText: {
     fontSize: "1.2rem !important",
   },
-  icons: {
-    display: "flex",
-    width: "55%",
-    justifyContent: "space-between",
-    alignSelf: "flex-start",
-    paddingInline: "1rem",
-    marginTop: "1rem",
-    "& svg": {
-      color: [theme.palette.text.primary],
-      paddingLeft: "0",
-      "&:hover": {
-        cursor: "pointer",
-        color: [theme.palette.primary.main],
-        transition: "all 0.3s linear",
-      },
-    },
-  },
   aboutImage: {
     width: "100%",
     marginTop: "1rem",
+    [theme.breakpoints.only("sm")]: {
+      width: "70%",
+    },
   },
   colorText: {
     color: [theme.palette.primary.main],
+  },
+  aboutContent: {
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    [theme.breakpoints.up("md")]: {
+      flexDirection: "row",
+    },
+   
   },
 }));
 
@@ -45,13 +40,7 @@ const About = () => {
       <Typography className={classes.title} component="h2">
         About me
       </Typography>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
+      <div className={classes.aboutContent}>
         <div>
           <Typography className={classes.aboutText}>
             Hello! I am <span className={classes.colorText}>Roei Yaacobi</span>,
@@ -63,7 +52,9 @@ const About = () => {
           </Typography>
         </div>
         <img
-          src={"https://res.cloudinary.com/dq6iduc79/image/upload/v1655203386/portfolio-avif/about5_j1mdia.webp"}
+          src={
+            "https://res.cloudinary.com/dq6iduc79/image/upload/v1655203386/portfolio-avif/about5_j1mdia.webp"
+          }
           alt="about me"
           className={classes.aboutImage}
         />

@@ -3,7 +3,6 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   carouselImage: {
-    // objectFit: "fill",
     objectFit: "cover",
     width: "100%",
     [theme.breakpoints.up("xs")]: {
@@ -35,7 +34,9 @@ const ImageCarousel = (props) => {
       navButtonsProps={{ style: { backgroundColor: "#000000b3" } }}
       indicatorContainerProps={{
         style: {
-          zIndex: "150",
+          zIndex: "1",
+          marginTop: "-40px",
+          position: "absolute"
         },
       }}
     >

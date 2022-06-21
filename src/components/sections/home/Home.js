@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 const textVariants = {
   hidden: {
     opacity: 0,
-    x: "100vw",
+    x: "-100vw",
   },
   visible: {
     opacity: 1,
@@ -62,7 +62,7 @@ const textVariants = {
     },
   },
 };
-const buttonVariants1 = {
+const buttonVariants = {
   hidden: {
     scale: 0,
   },
@@ -109,7 +109,7 @@ const Home = (props) => {
             variant="contained"
             className={classes.homeButton}
             component={motion.div}
-            variants={buttonVariants1}
+            variants={buttonVariants}
             initial="hidden"
             animate="visible"
           >
