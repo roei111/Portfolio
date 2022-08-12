@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Navbar from "./components/layout/navbar/Navbar";
-import ScrollTop from "./components/layout/scrollTop/ScrollTop"
+import ScrollTop from "./components/layout/scrollTop/ScrollTop";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import Home from "./components/sections/home/Home";
 import About from "./components/sections/about/About";
 import Projects from "./components/sections/projects/Projects";
 import Footer from "./components/sections/footer/Footer";
+
+
 
 //Get initial theme, if the initialTheme value is false then the theme is light
 let initialTheme = false;
@@ -24,28 +26,29 @@ function App() {
       mode: isDarkMode ? "dark" : "light",
       primary: {
         main: "#39bcbc",
-        contrastText: isDarkMode ? "white": "black",
+        contrastText: isDarkMode ? "white" : "black",
       },
       secondary: {
         main: "#6e5494",
-      }
+      },
     },
   });
   return (
     <>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Navbar
-        isDarkMode={isDarkMode}
-        setIsDarkMode={setIsDarkMode}
-        setIsThemeChanged={setIsThemeChanged}
-      />
-      <Home isThemeChanged={isThemeChanged} />
-      <About />
-      <Projects />
-      <Footer />
-      <ScrollTop showBelow={250} />
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Navbar
+          isDarkMode={isDarkMode}
+          setIsDarkMode={setIsDarkMode}
+          setIsThemeChanged={setIsThemeChanged}
+        />
+        <Home isThemeChanged={isThemeChanged} />
+        <div id="firebaseui-auth-container"></div>
+        <About />
+        <Projects />
+        <Footer />
+        <ScrollTop showBelow={250} />
+      </ThemeProvider>
     </>
   );
 }
