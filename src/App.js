@@ -8,8 +8,6 @@ import About from "./components/sections/about/About";
 import Projects from "./components/sections/projects/Projects";
 import Footer from "./components/sections/footer/Footer";
 
-
-
 //Get initial theme, if the initialTheme value is false then the theme is light
 let initialTheme = false;
 //If the the value from the local storage equals to dark
@@ -34,22 +32,19 @@ function App() {
     },
   });
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Navbar
-          isDarkMode={isDarkMode}
-          setIsDarkMode={setIsDarkMode}
-          setIsThemeChanged={setIsThemeChanged}
-        />
-        <Home isThemeChanged={isThemeChanged} />
-        <div id="firebaseui-auth-container"></div>
-        <About />
-        <Projects />
-        <Footer />
-        <ScrollTop showBelow={250} />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Navbar
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
+        setIsThemeChanged={setIsThemeChanged}
+      />
+      <Home isThemeChanged={isThemeChanged} />
+      <About />
+      <Projects />
+      <Footer />
+      <ScrollTop showBelow={250} />
+    </ThemeProvider>
   );
 }
 

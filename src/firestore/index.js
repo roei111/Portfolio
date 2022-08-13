@@ -1,7 +1,4 @@
 import { initializeApp } from "firebase/app";
-import firebase from "firebase/compat/app";
-import * as firebaseui from "firebaseui";
-import "firebaseui/dist/firebaseui.css";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
@@ -14,17 +11,4 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-// Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.AuthUI(auth);
-
-ui.start("#firebaseui-auth-container", {
-  signInOptions: [
-    {
-      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
-      disableSignUp: {
-        status: true,
-      },
-    },
-  ],
-});
+export const auth = getAuth(app);
