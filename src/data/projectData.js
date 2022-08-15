@@ -68,6 +68,24 @@ const projects = [
       youtube: "https://www.youtube.com/watch?v=iIN-IuodrzM",
     },
   },
+  {
+    id: 4,
+    title: "Music Composer Portfolio",
+    description:
+      "A portfolio site I made for a friend who is pursuing a Bachelor of Music in Composition from The Juilliard School",
+    tech: ["ReactJS", "React Router", "Material-UI", "Framer Motion"],
+    img: [
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553104/portfolio-avif/daniel-lubin-desktop_iqee9r.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553852/portfolio-avif/daniel-lubin-mobile_qa47ci.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553100/portfolio-avif/image_8_ai3ibm.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553264/portfolio-avif/daniel-lubin-works_oq4a73.webp",
+    ],
+    links: {
+      url: "https://daniel-lubin.netlify.app/",
+      github: "https://github.com/roei111/Daniel-Lubin-Portfolio",
+      youtube: "https://www.youtube.com/watch?v=Q1OABscozZM",
+    },
+  },
 ];
 
 export default projects;
