@@ -7,6 +7,7 @@ import Home from "./components/sections/home/Home";
 import About from "./components/sections/about/About";
 import Projects from "./components/sections/projects/Projects";
 import Footer from "./components/sections/footer/Footer";
+import Experience from "./components/sections/experience/Experience";
 
 //Get initial theme, if the initialTheme value is false then the theme is light
 let initialTheme = false;
@@ -24,6 +25,7 @@ function App() {
       mode: isDarkMode ? "dark" : "light",
       primary: {
         main: "#39bcbc",
+        light: "#39bcbce8",
         contrastText: isDarkMode ? "white": "black",
       },
       secondary: {
@@ -42,6 +44,7 @@ function App() {
       />
       <Home isThemeChanged={isThemeChanged} />
       <About />
+      <Experience />
       <Projects />
       <Footer />
       <ScrollTop showBelow={250} />
