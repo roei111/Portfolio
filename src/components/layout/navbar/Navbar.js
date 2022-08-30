@@ -19,6 +19,7 @@ import { useStyles } from "./Navbar-style";
 const navLinks = [
   { name: "Home", href: "home" },
   { name: "About me", href: "about" },
+  { name: "Experience", href: "experience" },
   { name: "Projects", href: "projects" },
 ];
 
