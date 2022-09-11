@@ -20,7 +20,8 @@ const navLinks = [
   { name: "Home", href: "home" },
   { name: "About me", href: "about" },
   { name: "Experience", href: "experience" },
-  { name: "Projects", href: "projects" },
+  { name: "My Projects", href: "projects" },
+  { name: "Open Source", href: "open-source" },
 ];
 
 const navVariants = {

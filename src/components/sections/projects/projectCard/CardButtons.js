@@ -33,7 +33,8 @@ const CardButtons = (props) => {
         variant="contained"
         color="error"
         target="_blank"
-        href={links.youtube}
+        disabled={!links.youtube}
+        href={links.youtube ? links.youtube : " "}
         startIcon={<YouTubeIcon />}
       >
         Video
