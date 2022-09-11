@@ -1,5 +1,5 @@
 import { Typography, Card, CardContent, Chip } from "@mui/material";
-import CardButtons from "../CardButtons";
+import CardButtons from "./CardButtons";
 import ImageCarousel from "../../../layout/imageCarousel/ImageCarousel";
 import { useStyles } from "./ProjectCard-style";
 

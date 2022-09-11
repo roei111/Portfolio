@@ -1,18 +1,18 @@
 import { Container, Typography, Divider } from "@mui/material";
-import projects from "../../../data/projectData";
 import ProjectCard from "./projectCard/ProjectCard";
 import { useStyles } from "./Projects-style";
 
-const Projects = () => {
+const Projects = (props) => {
   const classes = useStyles();
+  const { projectData, title, id } = props;
   return (
-    <Container id="projects">
+    <Container id={id}>
       <Divider variant="middle" style={{ margin: "1rem" }} />
       <Typography className={classes.title} component="h2">
-        Projects
+        {title}
       </Typography>
-      {projects.map((project) => (
-        <ProjectCard project={project} key={project.id}/>
+      {projectData.map((project) => (
+        <ProjectCard project={project} key={project.id} />
       ))}
     </Container>
   );

@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     id: 1,
     title: "Birthday Organizer",
@@ -75,10 +75,10 @@ const projects = [
       "A portfolio site I made for a friend who is pursuing a Bachelor of Music in Composition from The Juilliard School",
     tech: ["ReactJS", "React Router", "Material-UI", "Framer Motion"],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553104/portfolio-avif/daniel-lubin-desktop_iqee9r.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553852/portfolio-avif/daniel-lubin-mobile_qa47ci.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553100/portfolio-avif/image_8_ai3ibm.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1660553264/portfolio-avif/daniel-lubin-works_oq4a73.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553104/portfolio-avif/daniel-lubin-desktop_iqee9r.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553852/portfolio-avif/daniel-lubin-mobile_qa47ci.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553100/portfolio-avif/image_8_ai3ibm.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553264/portfolio-avif/daniel-lubin-works_oq4a73.webp",
     ],
     links: {
       url: "https://daniel-lubin.netlify.app/",
@@ -88,4 +88,30 @@ const projects = [
   },
 ];
 
-export default projects;
+export const openSourceProjects = [
+  {
+    id: 1,
+    title: "Milan",
+    description:
+      "Milan aims to bring all of the various NGOs and donors under one roof to ease the burden of going to find their appropriate donors and the appropriate communities to donate to",
+    tech: [
+      "ReactJS",
+      "JavaScript",
+      "Node.js",
+      "MongoDB",
+      "React Router",
+      "Express",
+      "CSS",
+    ],
+    img: [
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1662897192/portfolio-avif/milan_2_id8vdv.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1662896617/portfolio-avif/FireShot_Capture_072_-_Milan_-_User_Register_-_milaan.vercel.app_fqeuou.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1662896617/portfolio-avif/FireShot_Capture_071_-_Milan_-_Home_-_milaan.vercel.app_yvbaab.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/v1662896618/portfolio-avif/FireShot_Capture_070_-_Milan_-_Home_-_milaan.vercel.app_nv20hg.webp",
+    ],
+    links: {
+      url: "https://milaan.vercel.app/",
+      github: "https://github.com/IAmTamal/Milan",
+    },
+  },
+];
