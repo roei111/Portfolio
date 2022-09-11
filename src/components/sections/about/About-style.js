@@ -1,12 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles((theme) => ({
-  title: {
-    fontSize: "2rem !important",
-    fontWeight: "700 !important",
-    textAlign: "center",
-    marginBottom: "1rem !important",
-  },
   aboutText: {
     fontSize: "1.2rem !important",
     lineHeight: "1.7 !important",
