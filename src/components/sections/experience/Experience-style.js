@@ -1,12 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles((theme) => ({
-  title: {
-    fontSize: "2rem !important",
-    fontWeight: "700 !important",
-    textAlign: "center",
-    marginBottom: "1rem !important",
-  },
   colorText: {
     backgroundColor: `${[theme.palette.primary.light]} !important`,
     fontWeight: "bold",
