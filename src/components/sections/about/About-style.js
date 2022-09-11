@@ -9,6 +9,17 @@ export const useStyles = makeStyles((theme) => ({
   },
   aboutText: {
     fontSize: "1.2rem !important",
+    lineHeight: "1.7 !important",
+    [theme.breakpoints.up("lg")]: {
+      marginInline: "2rem !important",
+      lineHeight: "2 !important",
+    },
+    [theme.breakpoints.only("md")]: {
+      lineHeight: "2 !important",
+    },
+    "&:last-child": {
+      marginTop: "0.5rem",
+    }
   },
   aboutImage: {
     width: "100%",
@@ -27,5 +38,6 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       flexDirection: "row",
     },
+
   },
 }));
