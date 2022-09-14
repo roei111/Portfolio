@@ -1,7 +1,6 @@
 import { Button, CardActions } from "@mui/material";
 import LinkIcon from "@mui/icons-material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const CardButtons = (props) => {
   const { links } = props;
@@ -10,7 +9,7 @@ const CardButtons = (props) => {
       <Button
         size="small"
         variant="contained"
-        sx={{ color: "white" }}
+        sx={{ color: "white", width: "50%" }}
         disabled={!links.url}
         target="_blank"
         href={links.url ? links.url : " "}
@@ -20,24 +19,13 @@ const CardButtons = (props) => {
       </Button>
       <Button
         size="small"
-        variant="contained"
-        color="secondary"
+        variant="outlined"
+        sx={{ width: "50%", border: "1px solid" }}
         target="_blank"
         href={links.github}
         startIcon={<GitHubIcon />}
       >
         Repository
-      </Button>
-      <Button
-        size="small"
-        variant="contained"
-        color="error"
-        target="_blank"
-        disabled={!links.youtube}
-        href={links.youtube ? links.youtube : " "}
-        startIcon={<YouTubeIcon />}
-      >
-        Video
       </Button>
     </CardActions>
   );

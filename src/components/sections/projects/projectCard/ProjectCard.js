@@ -1,6 +1,6 @@
 import { Typography, Card, CardContent, Chip } from "@mui/material";
 import CardButtons from "./CardButtons";
-import ImageCarousel from "../../../layout/imageCarousel/ImageCarousel";
+import MediaCarousel from "../../../layout/carousel/MediaCarousel";
 import { useStyles } from "./ProjectCard-style";
 
 const ProjectCard = (props) => {
@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
   const { project } = props;
   return (
     <Card className={classes.card} elevation={15}>
-      <ImageCarousel images={project.img} />
+      <MediaCarousel project={project} />
       <div className={classes.contentWrapper}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

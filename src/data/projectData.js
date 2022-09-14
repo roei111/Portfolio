@@ -25,7 +25,7 @@ export const projects = [
     links: {
       url: "https://birthday-organizer.herokuapp.com/",
       github: "https://github.com/roei111/Birthday-Countdown",
-      youtube: "https://www.youtube.com/watch?v=8yuLlZgGuRs",
+      youtube: "8yuLlZgGuRs",
     },
   },
   {
@@ -41,7 +41,7 @@ export const projects = [
     links: {
       url: "https://infinite-scroll-photos.herokuapp.com/",
       github: "https://github.com/roei111/Infinite-Scroll",
-      youtube: "https://www.youtube.com/watch?v=WmdbM44LBUU",
+      youtube: "WmdbM44LBUU",
     },
   },
   {
@@ -64,7 +64,7 @@ export const projects = [
     ],
     links: {
       github: "https://github.com/roei111/Url-Shortener",
-      youtube: "https://www.youtube.com/watch?v=iIN-IuodrzM",
+      youtube: "iIN-IuodrzM",
     },
   },
   {
@@ -88,7 +88,7 @@ export const projects = [
     links: {
       url: "https://daniel-lubin.netlify.app/",
       github: "https://github.com/roei111/Daniel-Lubin-Portfolio",
-      youtube: "https://www.youtube.com/watch?v=Q1OABscozZM",
+      youtube: "Q1OABscozZM",
     },
   },
 ];

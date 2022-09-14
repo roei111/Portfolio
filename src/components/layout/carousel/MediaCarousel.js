@@ -1,10 +1,12 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { useStyles } from "./ImageCarousel-style";
+import { useStyles } from "./MediaCarousel-style";
+import YoutubeVideo from "./YoutubeVideo";
 
-const ImageCarousel = (props) => {
+const MediaCarousel = (props) => {
   const classes = useStyles();
-  const images = props.images;
+  const { img: images, links, title } = props.project;
+  const {youtube: videoId} = links;
   return (
     <Carousel showThumbs={false} infiniteLoop={true}>
       {images.map((image) => (
@@ -15,8 +17,9 @@ const ImageCarousel = (props) => {
           alt="project"
         />
       ))}
+      {videoId ? <YoutubeVideo videoId={videoId} title={title} /> : null}
     </Carousel>
   );
 };
 
-export default ImageCarousel;
+export default MediaCarousel;
