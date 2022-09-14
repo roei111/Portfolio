@@ -6,7 +6,8 @@ import YoutubeVideo from "./YoutubeVideo";
 const MediaCarousel = (props) => {
   const classes = useStyles();
   const { img: images, links, title } = props.project;
-  const {youtube: videoId} = links;
+  const { youtube: videoId } = links;
+  const arr = [videoId].filter((videoId) => videoId != null);
   return (
     <Carousel showThumbs={false} infiniteLoop={true}>
       {images.map((image) => (
@@ -17,7 +18,9 @@ const MediaCarousel = (props) => {
           alt="project"
         />
       ))}
-      {videoId ? <YoutubeVideo videoId={videoId} title={title} /> : null}
+      {arr.map((videoId) => (
+        <YoutubeVideo key={videoId} videoId={videoId} title={title} />
+      ))}
     </Carousel>
   );
 };
