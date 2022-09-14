@@ -19,8 +19,8 @@ export const projects = [
       "JWT",
     ],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151578/Portfolio/mobile_pilyzs.png",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663152715/Portfolio/birthday-1920_ivkx4i.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151578/Portfolio/mobile_pilyzs.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663152715/Portfolio/birthday-1920_ivkx4i.webp",
     ],
     links: {
       url: "https://birthday-organizer.herokuapp.com/",
@@ -35,8 +35,8 @@ export const projects = [
       "An image gallery that fetches data from Unsplash API. It has some awesome features like searching for images, apply filters (sort by, orientation and color) and infinite scrolling in which images keeps on loading as the user scrolls",
     tech: ["JavaScript", "ReactJS", "Material-UI", "Unsplash API"],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151671/Portfolio/linkedin_photo_qtbnjb.png",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151675/Portfolio/Mobile-App-Screen-Mockups_4_t8lh7i.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151671/Portfolio/linkedin_photo_qtbnjb.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151675/Portfolio/Mobile-App-Screen-Mockups_4_t8lh7i.webp",
     ],
     links: {
       url: "https://infinite-scroll-photos.herokuapp.com/",
@@ -59,8 +59,8 @@ export const projects = [
       "Mongoose",
     ],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151949/Portfolio/url-shortener-mobile-min_aoxb6v.png",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151813/Portfolio/url-shortener_mhrgh3.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151949/Portfolio/url-shortener-mobile-min_aoxb6v.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151813/Portfolio/url-shortener_mhrgh3.webp",
     ],
     links: {
       github: "https://github.com/roei111/Url-Shortener",
@@ -82,8 +82,8 @@ export const projects = [
       "Firestore",
     ],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151598/Portfolio/18334773_171-min_o0vtqc.jpg",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151582/Portfolio/bohetnbuoauuu_pfiaix.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151598/Portfolio/18334773_171-min_o0vtqc.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151582/Portfolio/bohetnbuoauuu_pfiaix.webp",
     ],
     links: {
       url: "https://daniel-lubin.netlify.app/",
