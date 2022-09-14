@@ -17,10 +17,10 @@ export const useStyles = makeStyles((theme) => ({
   },
   contentWrapper: {
     [theme.breakpoints.only("md")]:{
-      width: "70%",
+      width: "50%",
     },
     [theme.breakpoints.up("lg")]: {
-      width: "400px",
+      minWidth: "360px",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
