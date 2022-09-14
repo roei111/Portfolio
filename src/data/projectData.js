@@ -5,27 +5,22 @@ export const projects = [
     description:
       "Platform built with MERN stack for organizing birthdays by groups, and counting down to the dates. It has cool features like authentication, authorization, single-page application, responsive design, full CRUD operations & upload photos",
     tech: [
+      "JavaScript",
       "ReactJS",
-      "Material-UI",
       "Node.js",
       "MongoDB",
-      "Redux",
-      "React Router",
       "Express",
+      "Redux",
+      "Material-UI",
+      "React Router",
       "Bcrypt",
       "Mongoose",
       "Multer",
-      "Cloudinary",
       "JWT",
     ],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201895/portfolio-avif/img1_iikmfj_u14et3.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655821069/portfolio-avif/birthday-mobile2_qoknbw.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201893/portfolio-avif/image_1_xzefap_ri1ga9.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655822405/portfolio-avif/birthday-mobile3_exsvfp.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201897/portfolio-avif/groups-desktop_lx1luo_jebby8.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655820616/portfolio-avif/birthday-mobile_a3jo7i.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201894/portfolio-avif/login-page-desktop_by1ayt_pxm6pk.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151578/Portfolio/mobile_pilyzs.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663152715/Portfolio/birthday-1920_ivkx4i.png",
     ],
     links: {
       url: "https://birthday-organizer.herokuapp.com/",
@@ -38,13 +33,10 @@ export const projects = [
     title: "Infinite Scroll Stock Photos",
     description:
       "An image gallery that fetches data from Unsplash API. It has some awesome features like searching for images, apply filters (sort by, orientation and color) and infinite scrolling in which images keeps on loading as the user scrolls",
-    tech: ["ReactJS", "Material-UI"],
+    tech: ["JavaScript", "ReactJS", "Material-UI", "Unsplash API"],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201894/portfolio-avif/img1_yebpmo_ceflkr.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655822812/portfolio-avif/infinite-scroll-mobile_zohdk8.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655203856/portfolio-avif/infinite-image-view_wuj3nk.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201894/portfolio-avif/infinite-desktop_x93qsl_nqbdqz.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201895/portfolio-avif/infinite-desktop2_feirqf_rxq0uh.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151671/Portfolio/linkedin_photo_qtbnjb.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151675/Portfolio/Mobile-App-Screen-Mockups_4_t8lh7i.png",
     ],
     links: {
       url: "https://infinite-scroll-photos.herokuapp.com/",
@@ -57,11 +49,18 @@ export const projects = [
     title: "URL Shortener",
     description:
       "Vanilla Javascript app that shortens a long URL, tracks the number of clicks and has full responsive design",
-    tech: ["EJS", "Bootstrap", "Node.js", "Express", "MongoDB", "Mongoose"],
+    tech: [
+      "JavaScript",
+      "Node.js",
+      "EJS",
+      "Bootstrap",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+    ],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201894/portfolio-avif/img1_xaczrg_jumnfy.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1655201893/portfolio-avif/image_2_w9wrve_z9enik.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/v1655824416/portfolio-avif/url-mobile_l3ycff.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151949/Portfolio/url-shortener-mobile-min_aoxb6v.png",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151813/Portfolio/url-shortener_mhrgh3.png",
     ],
     links: {
       github: "https://github.com/roei111/Url-Shortener",
@@ -72,13 +71,19 @@ export const projects = [
     id: 4,
     title: "Music Composer Portfolio",
     description:
-      "A portfolio site I made for a friend who is pursuing a Bachelor of Music in Composition from The Juilliard School",
-    tech: ["ReactJS", "React Router", "Material-UI", "Framer Motion"],
+      "A portfolio site I made for a friend who is pursuing a Bachelor of Music in Composition from The Juilliard School. The site has an admin panel, where he can change the site's content by himself",
+    tech: [
+      "JavaScript",
+      "ReactJS",
+      "React Router",
+      "Material-UI",
+      "Framer Motion",
+      "Firebase",
+      "Firestore",
+    ],
     img: [
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553104/portfolio-avif/daniel-lubin-desktop_iqee9r.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553852/portfolio-avif/daniel-lubin-mobile_qa47ci.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553100/portfolio-avif/image_8_ai3ibm.webp",
-      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_936,w_1900/v1660553264/portfolio-avif/daniel-lubin-works_oq4a73.webp",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151598/Portfolio/18334773_171-min_o0vtqc.jpg",
+      "https://res.cloudinary.com/dq6iduc79/image/upload/c_scale,h_1080,w_1920/v1663151582/Portfolio/bohetnbuoauuu_pfiaix.png",
     ],
     links: {
       url: "https://daniel-lubin.netlify.app/",
@@ -95,8 +100,8 @@ export const openSourceProjects = [
     description:
       "Milan aims to bring all of the various NGOs and donors under one roof to ease the burden of going to find their appropriate donors and the appropriate communities to donate to",
     tech: [
-      "ReactJS",
       "JavaScript",
+      "ReactJS",
       "Node.js",
       "MongoDB",
       "React Router",
