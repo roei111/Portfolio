@@ -12,7 +12,7 @@ const MediaCarousel = (props) => {
   const arr = [videoId].filter((videoId) => videoId != null);
   return (
     <Carousel
-    className={classes.carousel}
+      className={classes.carousel}
       showThumbs={false}
       infiniteLoop={true}
       swipeable={false}
@@ -36,7 +36,7 @@ const MediaCarousel = (props) => {
             title={label}
             className={classes.arrows}
             style={{
-              left: "calc(100% - 50px)",
+              right: 0,
             }}
           >
             <NavigateNextIcon fontSize="large" />
