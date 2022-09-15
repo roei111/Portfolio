@@ -25,19 +25,4 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "1.5rem !important",
     fontWeight: "700 !important",
   },
-  homeButtonsWrapper: {
-    display: "flex",
-    justifyContent: "space-between",
-    paddingLeft: "1rem",
-    width: "95%",
-  },
-  homeButton: {
-    fontWeight: "800 !important",
-    letterSpacing: "0.1em !important",
-    backgroundImage: "linear-gradient(to right, #42bbbb, #00c1c1)",
-    "&:hover": {
-      opacity: "0.85",
-      transition: "all 0.2s ease-in-out",
-    },
-  },
 }));
