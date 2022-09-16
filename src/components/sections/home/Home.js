@@ -49,7 +49,7 @@ const Home = (props) => {
           variants={textVariants}
           initial="hidden"
           animate="visible"
-          color="primary"
+          // color="primary"
           className={classes.text}
         >
           Full-Stack Web Developer
