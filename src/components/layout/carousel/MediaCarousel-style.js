@@ -26,6 +26,10 @@ export const useStyles = makeStyles((theme) => ({
       color: "#fff",
       backgroundColor: "#00000069",
       borderRadius: "50%",
+      "&:hover":{
+        backgroundColor: "#000000a6",
+        transition: "0.25s linear, border-bottom 0.2s ease-in-out",
+      }
     },
   },
   carousel: {
