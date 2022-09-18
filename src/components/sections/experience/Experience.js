@@ -11,16 +11,14 @@ import { useStyles } from "./Experience-style";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import jobs from "../../../data/experienceData";
 import DOMPurify from "dompurify";
-import '../../../index.css';
+import "../../../index.css";
+import Title from "../../layout/Title";
 
 const Experience = () => {
   const classes = useStyles();
   return (
     <Container id="experience">
-      <Divider variant="middle" style={{ margin: "1rem" }} />
-      <Typography className="title" component="h2">
-        Work Experience
-      </Typography>
+      <Title title="Work Experience" />
       {jobs.map((job, index) => (
         <div className={classes.jobWrapper} key={index}>
           <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>

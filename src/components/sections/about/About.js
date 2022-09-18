@@ -1,15 +1,13 @@
 import { Container, Typography, Divider } from "@mui/material";
 import { useStyles } from "./About-style";
 import '../../../index.css';
+import Title from "../../layout/Title";
 
 const About = () => {
   const classes = useStyles();
   return (
     <Container id="about">
-      <Divider variant="middle" style={{ margin: "1rem" }} />
-      <Typography className="title" component="h2">
-        About me
-      </Typography>
+      <Title title="About me" />
       <div className={classes.aboutContent}>
         <div>
           <Typography className={classes.aboutText}>
