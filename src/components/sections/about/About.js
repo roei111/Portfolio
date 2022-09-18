@@ -1,6 +1,5 @@
-import { Container, Typography, Divider } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { useStyles } from "./About-style";
-import '../../../index.css';
 import Title from "../../layout/Title";
 
 const About = () => {

@@ -1,7 +1,6 @@
 import {
   Container,
   Typography,
-  Divider,
   Chip,
   List,
   ListItem,
@@ -11,7 +10,6 @@ import { useStyles } from "./Experience-style";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import jobs from "../../../data/experienceData";
 import DOMPurify from "dompurify";
-import "../../../index.css";
 import Title from "../../layout/Title";
 
 const Experience = () => {

@@ -1,6 +1,5 @@
-import { Container, Typography, Divider } from "@mui/material";
+import { Container } from "@mui/material";
 import ProjectCard from "./projectCard/ProjectCard";
-import '../../../index.css';
 import Title from "../../layout/Title";
 
 const Projects = (props) => {

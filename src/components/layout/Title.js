@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Typography, Divider } from "@mui/material";
+import "../../index.css";
 
 const titleVariants = {
   hidden: () => ({
